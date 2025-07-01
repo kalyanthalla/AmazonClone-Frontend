@@ -575,35 +575,35 @@ footer {
 
 /* Specific image adjustments */
 .box:nth-child(1) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/61-jBuhtgZL._AC_UL320_.jpg'); /* Clothes */
+    background-image: url(/box1_image.jpg); /* Clothes */
 }
 
 .box:nth-child(2) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/71rXSVqET9L._AC_UL320_.jpg'); /* Health & Personal Care */
+    background-image: url(/box2_image.jpg); /* Health & Personal Care */
 }
 
 .box:nth-child(3) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/81NIh0-+0VL._AC_UL320_.jpg'); /* Furniture */
+    background-image: url(/box3_image.jpg); /* Furniture */
 }
 
 .box:nth-child(4) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_UL320_.jpg'); /* Electronics */
+    background-image: url(/box4_image.jpg); /* Electronics */
 }
 
 .box:nth-child(5) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/61TD5JLGhIL._AC_UL320_.jpg'); /* Beauty Picks */
+    background-image: url(/box5_image.jpg); /* Beauty Picks */
 }
 
 .box:nth-child(6) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/71U-Q+N7PXL._AC_UL320_.jpg'); /* Pet Care */
+    background-image: url(/box6_image.jpg); /* Pet Care */
 }
 
 .box:nth-child(7) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/71J8tz0UeJL._AC_UL320_.jpg'); /* Toys */
+    background-image: url(/box7_image.jpg); /* Toys */
 }
 
 .box:nth-child(8) .box-img {
-    background-image: url('https://m.media-amazon.com/images/I/81jp9gZx1XL._AC_UL320_.jpg'); /* Fashion Trends */
+    background-image: url(/box8_image.jpg); /* Fashion Trends */
 }
 /* Responsive Styles */
 @media (max-width: 1200px) {
