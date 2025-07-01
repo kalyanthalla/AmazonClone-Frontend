@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon FrontEnd Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="navbar">
             <div class="nav-logo border">
                 <div class="logo"></div>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
 
             <div class="nav-address border">
@@ -25,6 +29,9 @@
             <div class="nav-search">
                 <select class="search-select">
                     <option>All</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home</option>
                 </select>
                 <input placeholder="Search Amazon" class="search-input">
                 <div class="search-icon">
@@ -46,25 +53,22 @@
                 <p class="nav-second">Accounts & Lists</p>
             </div>
 
-            <div class="dropdown">
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-
             <div class="nav-return border">
                 <p><span>Returns</span></p>
                 <p class="nav-second">& Orders</p>     
             </div>
 
             <div class="nav-cart border">
-                <i class="fa-solid fa-cart-plus"></i>
-                Cart
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <p>Cart</p>
             </div>
         </div>
         
-
-
         <div class="panel">
-            <div class="panel-all  border">
+            <div class="panel-all border">
                 <i class="fa-solid fa-bars"></i>
                 All
             </div>
@@ -81,8 +85,16 @@
             </div>
         </div>
     </header>
+    
+    <div class="mobile-search">
+        <input placeholder="Search Amazon" class="search-input">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    
     <main>
-        <div class="hero-section border">
+        <div class="hero-section">
             <div class="hero-msg">
                 <p>You are on <b>amazon.com</b>. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
             </div>
@@ -92,64 +104,65 @@
             <div class="box">
                 <div class="box-content">
                     <h2>Clothes</h2>
-                    <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box1_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
                     <h2>Health & Personal Care</h2>
-                    <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box2_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
                     <h2>Furniture</h2>
-                    <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box3_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
                     <h2>Electronics</h2>
-                    <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box4_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
                     <h2>Beauty Picks</h2>
-                    <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box5_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
                     <h2>Pet Care</h2>
-                    <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box6_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
                     <h2>New Arrivals in Toys</h2>
-                    <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                    <div class="box-img" style="background-image: url(/box7_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
             <div class="box">
                 <div class="box-content">
-                    <h2>Discover Fashion trends</h2>
-                    <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                    <h2>Discover Fashion Trends</h2>
+                    <div class="box-img" style="background-image: url(/box8_image.jpg);"></div>
                     <p>See more</p>
                 </div>
             </div>
         </div>
     </main>
+    
     <footer>
         <div class="foot-panel1">
-            Back to top
+            <a href="#top">Back to Top</a>
         </div>
 
         <div class="foot-panel2">
@@ -164,7 +177,7 @@
             <ul>
                 <p>Make Money with Us</p>
                 <a>Sell Products on Amazon</a>
-                <a>Sell on Amazon Bussiness</a>
+                <a>Sell on Amazon Business</a>
                 <a>Sell Apps on Amazon</a>
                 <a>Become an affiliate</a>
                 <a>Advertize your products</a>
@@ -174,14 +187,13 @@
             </ul>
             <ul>
                 <p>Amazon Payment Products</p>
-                <a>Amazon Bussiness Card</a>
+                <a>Amazon Business Card</a>
                 <a>Shop with Points</a>
                 <a>Reload Your Balance</a>
                 <a>Amazon Currency Converter</a>
             </ul>
             <ul>
                 <p>Let Us Help You</p>
-                <a>Amazon and COVID-19</a>
                 <a>Your Account</a>
                 <a>Your Orders</a>
                 <a>Shipping Rates & Policies</a>
@@ -194,185 +206,75 @@
 
         <div class="foot-panel3">
             <div class="logo"></div>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="currency-selector">
+                <span>$ USD - U.S. Dollar</span>
+            </div>
+            <div class="country-selector">
+                <span>United States</span>
+            </div>
         </div>
 
-        
         <div class="foot-panel4">
-            <div class="container">
-                <ul>
+            <div class="footer-links">
+                <div class="links-column">
                     <p>Amazon Music</p>
-                    <a>Stream millions of</a>
-                    <a>songs</a>
-                </ul>
-                <ul>
+                    <a>Stream millions of songs</a>
+                </div>
+                <div class="links-column">
                     <p>Amazon Advertising</p>
-                    <a>Find, attract, and engage</a>
-                    <a>customers</a>
-                </ul>
-                <ul>
+                    <a>Find, attract, and engage customers</a>
+                </div>
+                <div class="links-column">
                     <p>6pm</p>
-                    <a>Score deals on fashion</a>
-                    <a>brands</a>
-                </ul>
-                <ul>
+                    <a>Score deals on fashion brands</a>
+                </div>
+                <div class="links-column">
                     <p>AbeBooks</p>
                     <a>Books, art & collectibles</a>
-                </ul>
-                <ul>
+                </div>
+                <div class="links-column">
                     <p>ACX</p>
-                    <a>Audiobook Publishing</a>
-                    <a>Made Easy</a>
-                </ul>
-                <ul>
+                    <a>Audiobook Publishing Made Easy</a>
+                </div>
+                <div class="links-column">
                     <p>Sell on Amazon</p>
                     <a>Start a Selling Account</a>
-                </ul>
-                <ul>
-                    <p>Amazon Bussiness</p>
-                    <a>Everything For Your</a>
-                    <a>Bussiness</a>
-                </ul>
+                </div>
+                <div class="links-column">
+                    <p>Amazon Business</p>
+                    <a>Everything For Your Business</a>
+                </div>
             </div>
-            <div class="container">
-                <ul>
-                    <p>Amazon Global</p>
-                    <a>Ship Orders</a>
-                    <a>Internationally</a>
-                </ul>
-                <ul>
-                    <p>Home Services</p>
-                    <a>Experienced</a>
-                    <a>Pros</a>
-                    <a>Happiness</a>
-                    <a>Guarantee</a>
-                </ul>
-                <ul>
-                    <p>Amazon Ignite</p>
-                    <a>Sell your original Digital</a>
-                    <a>Educational Resources</a>
-                </ul>
-                <ul>
-                    <p>Amazon Web Services</p>
-                    <a>Scalable Cloud</a>
-                    <a>Computing Services</a>
-                </ul>
-                <ul>
-                    <p>Audible</p>
-                    <a>Listen to Books & Original</a>
-                    <a>Audio Performances</a>
-                </ul>
-                <ul>
-                    <p>Book Depository</p>
-                    <a>Books with free Delivery</a>
-                    <a>Worldwide</a>
-                </ul>
-                <ul>
-                    <p>Box Office Mojo</p>
-                    <a>Find Movie</a>
-                    <a>Box Office Data</a>
-                </ul>
-            </div>
-            <div class="container">
-                <ul>
-                    <p>ComiXology</p>
-                    <a>Thousands of</a>
-                    <a>Digital Comics</a>
-                </ul>
-                <ul>
-                    <p>DPReview</p>
-                    <a>Digital</a>
-                    <a>Photography</a>
-                </ul>
-                <ul>
-                    <p>Fabric</p>
-                    <a>Sewing, Quilting</a>
-                    <a>& Knitting</a>
-                </ul>
-                <ul>
-                    <p>Goodreads</p>
-                    <a>Book reviews & recommendations</a>
-                </ul>
-                <ul>
-                    <p>IMDb</p>
-                    <a>Movies, TV & Celebrities</a>
-                </ul>               
-                <ul>
-                    <p>IMDb Pro</p>
-                    <a>Get Info</a>
-                    <a>Entertainment</a>
-                    <a>Professionals</a>
-                    <a>Need</a>
-                </ul>
-                <ul>
-                    <p>Kindle Direct Publishing</p>
-                    <a>Indie Digital & Print Publishing Made Easy</a>
-                </ul>
-            </div>
-            <div class="container">
-                <ul>
-                    <p>Prime Video Direct</p>
-                    <a>Video</a>
-                    <a>Distribution Made Easy</a>
-                </ul>
-                <ul>
-                    <p>Shopbop</p>
-                    <a>Designer</a>
-                    <a>Fashion Brands</a>
-                </ul>
-                <ul>
-                    <p>Woot!</p>
-                    <a>Deals and Shenanigans</a>
-                </ul>
-                <ul>
-                    <p>Zappos</p>
-                    <a>Shoes & Clothing</a>
-                </ul>
-                <ul>
-                    <p>Ring</p>
-                    <a>Smart Home</a>
-                    <a>Security Systems</a>
-                </ul>
-                <ul>
-                    <p>eero WiFi</p>
-                    <a>Strem 4k Video in Every Room</a>
-                </ul>
-                <ul>
-                    <p>Blink</p>
-                    <a>Smart Security for Every Home</a>
-                </ul>
-            </div>
-            <div class="container">
-                <ul>
-                    <p>Neighbors App</p>
-                    <a>Real-Time Crime & Safety Alerts</a>
-                </ul>
-                <ul>
-                    <p>Amazon Subscription Boxes</p>
-                    <a>Top Subscription boxes - right to your door</a>
-                </ul>
-                <ul>
-                    <p>PillPack</p>
-                    <a>Pharmacy Simplified</a>
-                </ul>
-            </div>
+        </div>
 
         <div class="foot-panel5">
             <div class="pages">
                 <a>Conditions of Use</a>
-                <b>.</b>
                 <a>Privacy Notice</a>
-                <b>.</b>
                 <a>Your Ads Privacy Choices</a>
-                <i class="fa-regular fa-square-check" color></i>
-                <i class="fa-solid fa-square-xmark"></i>
+                <div class="cookies-consent">
+                    <i class="fa-regular fa-square-check"></i>
+                    <span>Cookies</span>
+                </div>
             </div>
 
             <div class="copyright">
                 © 1996-2023, Amazon.com, Inc. or its affiliates
             </div>
-
         </div>
-
     </footer>
+    
+    <script>
+        // Simple script to handle mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.panel-ops').classList.toggle('active');
+            document.querySelector('.panel-deals').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
